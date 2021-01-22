@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+
 import {useState} from "react"
+import GrandFather from "./passingDrop"
+import "./App.css"
 
 
 // This is a React components
@@ -32,13 +33,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Count: {count}</p>
 
         <button onClick={handleAdding}>Add</button>
         <button onClick={multi}>Multiply By 5</button>
         <button onClick={reset}>Reset</button>
       </header>
+      <GrandFather />
     </div>
   );
 }
