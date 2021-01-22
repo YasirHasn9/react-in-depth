@@ -16,16 +16,28 @@ function App() {
   // we can achieve the same result by writing only one line
 
   const [state , setState] = useState(true)
+  const [count , setCount] = useState(0)
+
+  // this is a powerful feature react has 
+  // whenever the state changes react knows what to do and renders on the dom
+  const handleAdding = () => {
+    setCount(() => count + 1)
+  }
+  const multi = () => {
+    setCount(() => count * 5)
+  }
+  const reset = () => {
+    setCount(0)
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {
-          state && <p>The light is On</p>
-        }
-        {
-          !state && <p>The light is Off</p>
-        }
+        <p>Count: {count}</p>
+
+        <button onClick={handleAdding}>Add</button>
+        <button onClick={multi}>Multiply By 5</button>
+        <button onClick={reset}>Reset</button>
       </header>
     </div>
   );

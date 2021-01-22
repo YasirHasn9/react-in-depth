@@ -28,3 +28,25 @@ its just an engine that takes the code from react and display on the screen, a v
 4. scalable, reusable and fun to write
 
 5. we can manage the state through react or third library. It is unopinionated 
+
+
+#---
+when the state of the app changes, React will Know that and it will check which specific node have changes and it will update only these nodes. 
+This process called the reconciliation and this is also why react is so powerful
+
+
+#--
+The Virtual Dom
+It is a simple engine that interact with the actual dom for us. We tell the dom which element to render and will do so. And also will update the dom when the state changes.
+
+The virtual dom will take a picture of the real dom and when something gets changes it will compare this picture with the old one and will update the new one accordingly.
+
+So, it is a comparison of what a dom looked like before and after the state changed and it uses 
+the diffing algorithm to determine what node have changed on our browser.
+
+
+
+#-- 
+@ types of components 
+1- stateful which full of logic and the user can interact with the state of it
+2- stateless is juts a static components and there is no logic
