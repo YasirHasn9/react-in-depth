@@ -1,6 +1,7 @@
 
 import {useState} from "react"
 import GrandFather from "./passingDrop"
+import CountChanger from "./CountChanger"
 import "./App.css"
 
 
@@ -35,9 +36,15 @@ function App() {
       <header className="App-header">
         <p>Count: {count}</p>
 
-        <button onClick={handleAdding}>Add</button>
+
+        {/* we can make the button in separate component 
+        and also we can named CountChanger */}
+        {/* <button onClick={handleAdding}>Add</button>
         <button onClick={multi}>Multiply By 5</button>
-        <button onClick={reset}>Reset</button>
+        <button onClick={reset}>Reset</button> */}
+        <CountChanger changeCounter={handleAdding} label="Increase"/>
+        <CountChanger changeCounter={multi} label="Multiply"/>
+        <CountChanger changeCounter={reset} label="Reset"/>
       </header>
       <GrandFather />
     </div>

@@ -11,11 +11,16 @@
             grandchild1          grandchild2
 */ 
 
-
+function Child(props){
+    return (
+        <h2>{props.grandChildName}</h2>
+    )
+}
 function Parent(props){
     return (
         <div>
-        Parent: {props.parentData.name}
+        <h1>Parent: {props.parentData.name}</h1>
+        <Child grandChildName={props.parentData.grandChild}/>
         </div>
     )
 } 

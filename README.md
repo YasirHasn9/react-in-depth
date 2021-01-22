@@ -50,3 +50,7 @@ the diffing algorithm to determine what node have changed on our browser.
 @ types of components 
 1- stateful which full of logic and the user can interact with the state of it
 2- stateless is juts a static components and there is no logic
+
+
+
+every thing react at the end is an object 
