@@ -19,6 +19,13 @@ function TestEffects () {
       },[/* here are the dependency */ count])
 
 
+    //   we can run the useEffect only once, only when the component mounted and thats it
+
+
+    useEffect(() => {
+        console.log("Gets executed once")
+    } , [])
+
       return (
           <div>
               <h2>Test Compo</h2>
