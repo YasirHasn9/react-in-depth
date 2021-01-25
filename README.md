@@ -73,4 +73,5 @@ In React's comps: there is 2 types of comp
 -------------------------------------------
 
 Pure Component: comp with no side effects --> takes the same input , gives the same the output.
+check the [useEffect](./react-app/src/sideEffects.js)
 

@@ -3,6 +3,7 @@ import {useState, useEffect} from "react"
 import GrandFather from "./passingDrop"
 import CountChanger from "./CountChanger"
 import TestEffects from "./sideEffects"
+import CleanUp from "./cleanup"
 import "./App.css"
 
 
@@ -48,6 +49,8 @@ function App() {
         <CountChanger changeCounter={reset} label="Reset"/>
 
         <TestEffects />
+
+        <CleanUp />
       </header>
       <GrandFather />
     </div>

@@ -26,6 +26,12 @@ function TestEffects () {
         console.log("Gets executed once")
     } , [])
 
+
+    // rules of sideEffect
+    // useEffect() // all state and props
+    // useEffect(() => "do something" , []) // no state or props , runs onces
+    // useEffect(() => "anything " , [state , props])
+
       return (
           <div>
               <h2>Test Compo</h2>
@@ -38,3 +44,10 @@ function TestEffects () {
 }
 
 export default TestEffects
+
+
+// cleanup prevents memory leak in react
+// imagine you write an effect component that doesn't get
+// cleanup, your client need to navigates back and forth to the component
+// X times. Now, we have got X times function all running the same effect
+// over and over again. thats causes memory leak because you just increase the power and memory needed to run that component/function 
