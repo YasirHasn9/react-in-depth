@@ -4,6 +4,7 @@ import GrandFather from "./passingDrop"
 import CountChanger from "./CountChanger"
 import TestEffects from "./sideEffects"
 import CleanUp from "./cleanup"
+import DogApp from "./effects/Dog"
 import "./App.css"
 
 
@@ -36,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Count: {count}</p>
+        {/* <p>Count: {count}</p> */}
 
 
         {/* we can make the button in separate component 
@@ -44,15 +45,16 @@ function App() {
         {/* <button onClick={handleAdding}>Add</button>
         <button onClick={multi}>Multiply By 5</button>
         <button onClick={reset}>Reset</button> */}
-        <CountChanger changeCounter={handleAdding} label="Increase"/>
+        {/* <CountChanger changeCounter={handleAdding} label="Increase"/>
         <CountChanger changeCounter={multi} label="Multiply"/>
         <CountChanger changeCounter={reset} label="Reset"/>
 
         <TestEffects />
 
         <CleanUp />
-      </header>
       <GrandFather />
+      <DogApp /> */}
+      </header>
     </div>
   );
 }

@@ -8,6 +8,8 @@ const CleanUp = () => {
 
 
     useEffect(() => {
+
+        // in the function we run the effect 
         const setFromEvent = e => setPosition({x:e.clientX , y:e.clientY})
 
         window.addEventListener("mousemove" , setFromEvent)
