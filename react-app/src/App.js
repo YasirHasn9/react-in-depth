@@ -1,7 +1,8 @@
 
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import GrandFather from "./passingDrop"
 import CountChanger from "./CountChanger"
+import TestEffects from "./sideEffects"
 import "./App.css"
 
 
@@ -45,6 +46,8 @@ function App() {
         <CountChanger changeCounter={handleAdding} label="Increase"/>
         <CountChanger changeCounter={multi} label="Multiply"/>
         <CountChanger changeCounter={reset} label="Reset"/>
+
+        <TestEffects />
       </header>
       <GrandFather />
     </div>

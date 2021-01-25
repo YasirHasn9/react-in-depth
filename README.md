@@ -54,3 +54,23 @@ the diffing algorithm to determine what node have changed on our browser.
 
 
 every thing react at the end is an object 
+
+
+#--
+in 2009 programmers worked on js to make it execute outside the browser
+This is a a game changer because now we can send and receive data from our file system . But still rely on third-party bundler like webpack and rollup because these will compile the packs and assign any missing dependencies before sending any data.
+babel is a transplier the code for the browser and convert the latest feature of es6 that aren't supported in the browser.
+
+
+
+# Side Effects
+Side Effects are anything effects something outside the scope of function being executed. like fetching data from an api
+, timers , logging and manually manipulate the DOM.
+
+In React's comps: there is 2 types of comp
+1. components require cleanup
+2. components dont require cleanup
+-------------------------------------------
+
+Pure Component: comp with no side effects --> takes the same input , gives the same the output.
+
