@@ -1,10 +1,11 @@
 
+// import GrandFather from "./passingDrop"
+// import CountChanger from "./CountChanger"
+// import TestEffects from "./sideEffects"
+// import CleanUp from "./cleanup"
+// import DogApp from "./effects/Dog"
 import {useState, useEffect} from "react"
-import GrandFather from "./passingDrop"
-import CountChanger from "./CountChanger"
-import TestEffects from "./sideEffects"
-import CleanUp from "./cleanup"
-import DogApp from "./effects/Dog"
+import NewsFeed  from "./effects/newsFeed"
 import "./App.css"
 
 
@@ -54,6 +55,7 @@ function App() {
         <CleanUp />
       <GrandFather />
       <DogApp /> */}
+      <NewsFeed />
       </header>
     </div>
   );
