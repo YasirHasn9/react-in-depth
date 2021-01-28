@@ -8,6 +8,7 @@ import {useState, useEffect} from "react"
 import NewsFeed  from "./effects/newsFeed"
 import Name from "./propsChecking/name"
 import Lifecycle from "./Lifecycle/index"
+import ChangeName from "./Lifecycle/example"
 import "./App.css"
 
 
@@ -64,6 +65,7 @@ function App() {
       {/* <NewsFeed /> */}
       <Name name={name} handleChange={handleChange} />
       <Lifecycle />
+      <ChangeName />
       </header>
     </div>
   );

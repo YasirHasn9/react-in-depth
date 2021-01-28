@@ -46,7 +46,6 @@ class Lifecycle extends Component {
     // like fetching data via HTTP
     componentDidMount(){
         // this method is guaranteed to be called once in the whole lifecycle
-        console.log("hello Did mount")
         this.getDogs()
     }
    
