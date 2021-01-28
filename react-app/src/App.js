@@ -7,6 +7,7 @@
 import {useState, useEffect} from "react"
 import NewsFeed  from "./effects/newsFeed"
 import Name from "./propsChecking/name"
+import Lifecycle from "./Lifecycle/index"
 import "./App.css"
 
 
@@ -62,6 +63,7 @@ function App() {
       <DogApp /> */}
       {/* <NewsFeed /> */}
       <Name name={name} handleChange={handleChange} />
+      <Lifecycle />
       </header>
     </div>
   );

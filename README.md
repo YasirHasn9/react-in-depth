@@ -122,3 +122,22 @@ It is like constructor function , it gets called once on the initial mount
 Many engineers uses it to fetch data to expect the data to be available however, this cant done on the client
   a) update state vis this.setState
   b) perform last minute optimization
+
+
+`What happens when we call setState?`
+ setState will merge the object we passed into it into the current state of the component.
+ This will lead to cause a process called reconciliation, the goal of it is to update the UI
+ based on the new state.
+ hows that happening ?
+   react will construct a tree of its elements and will diff the new tree to previous one and will update the UI accordingly.
+
+
+`render`
+its required 
+could be on multiple phase on mounting and updating 
+it is pure component with no side effect
+all its care about is the props and state 
+display the element of react on the screen.
+you can think of the state and render method like a brothers 
+if state tells render to render it will do so.
+
