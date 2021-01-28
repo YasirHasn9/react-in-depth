@@ -141,3 +141,8 @@ display the element of react on the screen.
 you can think of the state and render method like a brothers 
 if state tells render to render it will do so.
 
+** Note **
+lifecycle
+constructed
+render
+side effec -> useEffect/componentDidMount()
