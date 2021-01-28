@@ -92,8 +92,7 @@ install
 
 ## React lifecycle methods
 ---------------------
-It is an important concept to leverage when it comes to writing react. They are necessary in order when we fetch data 
-and render based on that data.
+It is an important concept to leverage when it comes to writing react. They are necessary in order when we fetch data and render based on that data.
 
 
 They are 3 phases in react lifecycle birth, growth and death
@@ -109,3 +108,17 @@ They are 3 phases in react lifecycle birth, growth and death
   a) The component is removed from the screen
   b) componentWillUnmount can be used here to clean up the events
 
+
+`constructor`
+its oop basic and it gets called every time a new object is created.
+it is also called once only in the initial mounting life-cycle.
+here, we can initialize our state
+             bind our function that are local to the components(we dont bind with arrow function)
+
+             we can call the special function super() so we can have access to parent props(this.props)
+
+`componentWillMount`
+It is like constructor function , it gets called once on the initial mount 
+Many engineers uses it to fetch data to expect the data to be available however, this cant done on the client
+  a) update state vis this.setState
+  b) perform last minute optimization
