@@ -88,3 +88,24 @@ at this time, we are gonna use a prop-type
 install 
 
 
+
+
+## React lifecycle methods
+---------------------
+It is an important concept to leverage when it comes to writing react. They are necessary in order when we fetch data 
+and render based on that data.
+
+
+They are 3 phases in react lifecycle birth, growth and death
+1. Birth -- Mounting
+  a) render is invoked here 
+  b) componentDidMount gets called
+
+2. Growth -- Updating
+  a) setState can be used here to update the data forcing to call render again
+  b) componentShouldUpdate can be used here to stop calling render in necessary
+
+3. Death -- Unmounting
+  a) The component is removed from the screen
+  b) componentWillUnmount can be used here to clean up the events
+
