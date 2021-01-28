@@ -6,6 +6,7 @@
 // import DogApp from "./effects/Dog"
 import {useState, useEffect} from "react"
 import NewsFeed  from "./effects/newsFeed"
+import Name from "./propsChecking/name"
 import "./App.css"
 
 
@@ -23,6 +24,10 @@ function App() {
 
   const [state , setState] = useState(true)
   const [count , setCount] = useState(0)
+
+  // this is for the purpose of props-type
+  const [name , setName] = useState("")
+  const handleChange = e => setName(e.target.value)
 
   // this is a powerful feature react has 
   // whenever the state changes react knows what to do and renders on the dom
@@ -55,7 +60,8 @@ function App() {
         <CleanUp />
       <GrandFather />
       <DogApp /> */}
-      <NewsFeed />
+      {/* <NewsFeed /> */}
+      <Name name={name} handleChange={handleChange} />
       </header>
     </div>
   );

@@ -10,17 +10,17 @@ const DogApp = () => {
 
         axios.get("https://dog.ceo/api/breeds/image/random")
         .then(res => {
-           console.log("thes" , res.data.message)
+            console.log("thes" , res.data.message)
            setDogImage(() => res.data.message)
         }).catch(err => console.log(err))
 
-        // try {
-        //     let data = await axios.get("https://dog.ceo/api/breeds/image/random")
-        //     const image = await data.data.message
-        //     setDogImage(() => image)
-        // } catch(err){
-        //     console.log(err)
-        // }
+                    // try {
+                    //     let data = await axios.get("https://dog.ceo/api/breeds/image/random")
+                    //     const image = await data.data.message
+                    //     setDogImage(() => image)
+                    // } catch(err){
+                    //     console.log(err)
+                    // }
     },[newImg])
     return (
         <div>

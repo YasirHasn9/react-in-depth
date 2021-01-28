@@ -75,3 +75,16 @@ In React's comps: there is 2 types of comp
 Pure Component: comp with no side effects --> takes the same input , gives the same the output.
 check the [useEffect](./react-app/src/sideEffects.js)
 
+
+
+Props Checking
+-------------
+Because js is dynamic and so loose language, when we write something , it is gonna assume that we know what we are doing
+this is why we need to check the props in react 
+
+React used to have a built-in lib in its ecosystem but not any more but now we have other extensions for checking type such as `TypeScript` and `Flow`
+
+at this time, we are gonna use a prop-type
+install 
+
+
