@@ -4,20 +4,20 @@
 // import TestEffects from "./sideEffects"
 // import CleanUp from "./cleanup"
 // import DogApp from "./effects/Dog"
-import {useState, useEffect} from "react"
-import NewsFeed  from "./effects/newsFeed"
-import Name from "./propsChecking/name"
-import Lifecycle from "./Lifecycle/index"
-import ChangeName from "./Lifecycle/example"
-import ListCities from "./Lifecycle/ListCities"
+// import {useState, useEffect} from "react"
+// import NewsFeed  from "./effects/newsFeed"
+// import Name from "./propsChecking/name"
+// import Lifecycle from "./Lifecycle/index"
+// import ChangeName from "./Lifecycle/example"
+// import ListCities from "./Lifecycle/ListCities"
 import "./App.css"
-
+import DisplayWrappedComponentsByHOC from "./HOC/index"
 
 // This is a React components
 // Component must be capitalized 
 // it should return a react element 
 function App() {
-
+/*
   // // if console log what something gives us it will return an array of state and setter
   // const something = useState(false) 
   // so we can get the state and the setter
@@ -43,18 +43,19 @@ function App() {
   const reset = () => {
     setCount(0)
   }
+*/
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <p>Count: {count}</p> */}
+     
+        {/* <p>Count: {count}</p>
 
 
-        {/* we can make the button in separate component 
-        and also we can named CountChanger */}
-        {/* <button onClick={handleAdding}>Add</button>
+        we can make the button in separate component 
+        and also we can named CountChanger
+        <button onClick={handleAdding}>Add</button>
         <button onClick={multi}>Multiply By 5</button>
-        <button onClick={reset}>Reset</button> */}
-        {/* <CountChanger changeCounter={handleAdding} label="Increase"/>
+        <button onClick={reset}>Reset</button>
+        <CountChanger changeCounter={handleAdding} label="Increase"/>
         <CountChanger changeCounter={multi} label="Multiply"/>
         <CountChanger changeCounter={reset} label="Reset"/>
 
@@ -62,16 +63,20 @@ function App() {
 
         <CleanUp />
       <GrandFather />
-      <DogApp /> */}
-      {/* <NewsFeed /> */}
-      {/* <Name name={name} handleChange={handleChange} /> */}
-      {/* <Lifecycle /> */}
-      {/* <ChangeName /> */}
+      <DogApp />
+      <NewsFeed />
+      <Name name={name} handleChange={handleChange} />
+      <Lifecycle />
+      <ChangeName />
       <h1>Test </h1>
       <Lifecycle />
-      </header>
+  
 
-      {/* <ListCities /> */}
+      <ListCities /> */}
+      <header className="App-header">
+        <h1>Hello</h1>
+        <DisplayWrappedComponentsByHOC />
+      </header>
     </div>
   );
 }

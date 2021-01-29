@@ -146,3 +146,25 @@ lifecycle
 constructed
 render
 side effec -> useEffect/componentDidMount()
+##------------------------------------------
+
+
+
+Higher Order Components
+------------
+Simply, it is a component that takes a component as a argument and return a new one
+```js 
+function HOC = Wrapper => {
+    return class extends React.Component {
+        render(){
+            // in case we have states and we want to share around the components we can easily passed to Wrapper
+            return <Wrapper states={whatever} />
+        }
+    }
+}
+// now in case, we want the states to be passed to another function 
+const Button = props => <button>{props.state}</button>
+
+const ChildComponent = HOC(Button) // easy , right ?
+```
+I believe, this is how redux and Router are working.
