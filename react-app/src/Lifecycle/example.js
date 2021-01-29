@@ -53,7 +53,7 @@ class ChangeName extends Component{
         return (
             <div>
                 <p>Hello {this.state.name}</p>
-                <button  onClick={this.handleChange}>change</button>
+                <button  onClick={this.handleChange}>change name</button>
             </div>
         )
     }

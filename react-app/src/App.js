@@ -9,6 +9,7 @@ import NewsFeed  from "./effects/newsFeed"
 import Name from "./propsChecking/name"
 import Lifecycle from "./Lifecycle/index"
 import ChangeName from "./Lifecycle/example"
+import ListCities from "./Lifecycle/ListCities"
 import "./App.css"
 
 
@@ -63,10 +64,14 @@ function App() {
       <GrandFather />
       <DogApp /> */}
       {/* <NewsFeed /> */}
-      <Name name={name} handleChange={handleChange} />
+      {/* <Name name={name} handleChange={handleChange} /> */}
+      {/* <Lifecycle /> */}
+      {/* <ChangeName /> */}
+      <h1>Test </h1>
       <Lifecycle />
-      <ChangeName />
       </header>
+
+      {/* <ListCities /> */}
     </div>
   );
 }
