@@ -3,9 +3,13 @@
 import {useState , useReducer} from "react"
 
 const ManageState = () => {
-    const [checked , setChecked] = useState(false)
-    const toggle = () => setChecked(checked => !checked)
+    // this is the old way
+    // const [checked , setChecked] = useState(false)
+    // const toggle = () => setChecked(checked => !checked)
 
+    // the new way 
+    const [checked, toggle] = useReducer(checked =>  !checked, false)
+    console.log(checked)
     return (
         <div>
             <input style={{width:"2rem", height:"2rem"}} type="checkbox"  onChange={toggle}/>
