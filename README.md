@@ -168,3 +168,9 @@ const Button = props => <button>{props.state}</button>
 const ChildComponent = HOC(Button) // easy , right ?
 ```
 I believe, this is how redux and Router are working.
+--------------------------------------------------
+
+
+
+### useReducer vs useState
+Now , when it comes to manage the state in react's functional components , some engineers prefer useReducer hook over useState because with useReducer we can eliminate the code and also useReducer takes the old state and returns a new one 
