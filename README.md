@@ -174,3 +174,12 @@ I believe, this is how redux and Router are working.
 
 ### useReducer vs useState
 Now , when it comes to manage the state in react's functional components , some engineers prefer useReducer hook over useState because with useReducer we can eliminate the code and also useReducer takes the old state and returns a new one 
+----------------
+
+
+## React' Questions
+------------------
+1. which term commonly describe react applications ?
+- declarative : because we create the state and tell react whats to be in charge of.
+imagine if you want to ear chicken, all you have to say to your cook, hey i want chicken. we cant do this in imperative manners , we have to go step by step.
+[check this ](https://stackoverflow.com/questions/33655534/difference-between-declarative-and-imperative-in-react-js)
