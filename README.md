@@ -173,7 +173,7 @@ I believe, this is how redux and Router are working.
 
 
 ### useReducer vs useState
-Now , when it comes to manage the state in react's functional components , some engineers prefer useReducer hook over useState because with useReducer we can eliminate the code and also useReducer takes the old state and returns a new one 
+Now , when it comes to manage the state in react's functional components , some engineers prefer useReducer hook over useState because with useReducer we can eliminate the code and also useReducer takes the old state and returns a new one . also when it comes to manage a complex data, useReducer is the better.
 ----------------
 
 
@@ -191,3 +191,62 @@ imagine if you want to ear chicken, all you have to say to your cook, hey i want
 
 3. The best way to optimize a components that renders the same way given the same props is wrap in 
 in React.memo() [check](./react-app/src/hooks/memo.js)
+
+4. Handling to pass data through the tree component without having to pass props down manually is by using the useContext() hook
+
+5. The tool that take JSX and turn it into createElement is babel
+
+6. to handle code splitting use the React.lazy
+
+7. when we want the browser to paint before the effect runs , use useLayoutEffect() hook
+
+8. when you want a default implementation we can use React.pureComponent which equals 
+shouldComponentUpdate
+
+9. avoid copying props into component's state because we want the component to update in response for state change.
+
+10. children props: property lets us pass component as data to other component.
+
+11. innerHTML == dangerouslySetInnerHTML
+
+12. in webpack, we need to use a loader to load external data.
+
+13. Error boundaries is a React Component that catches JS error in the child component tree
+
+14. You can compose react component to create a user interface by nesting them.
+
+15. [e.target.id] calls a dynamic key
+```js
+const handleChange = e => {
+  this.setState({[e.target.id]: e.target.value})
+}
+```
+
+16. The purpose of using red is to directly access the real dom.
+
+17. All react components must be pure with respect to their props.
+
+
+18. when using map , we are sending a callback function that gets called on every element in the array
+
+
+19. ReactDOM packages has the render lifecycle that renders a react element on the dom tree.
+
+20. it is better to use function in setState  instead of object because setState is async and might result in out of sync values.
+
+21. you can set a default value for an uncontrolled filed by using the defaultValue.
+
+22. In jsx the lower-case tags are consider html tags, this is why we should capitalize the component name.
+
+23. to update the title of documents' title 
+```js
+useEffect(() => {
+  document.title = name + ' ' + lastName
+})
+```
+
+
+24. to the load the component lazily, wrap them in React.lazy
+
+
+25. React component won't render if one of the siblings gets re-render.

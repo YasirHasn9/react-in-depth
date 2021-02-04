@@ -13,7 +13,7 @@
 import "./App.css"
 // import DisplayWrappedComponentsByHOC from "./HOC/index"
 // import ManageState from "./hooks/index"
-// import DifferentBehaviors from "./Lifecycle/checkBehavior"
+import DifferentBehaviors from "./Lifecycle/checkBehavior"
 import {MemoFun} from "./hooks/memo"
 
 // This is a React components
@@ -79,7 +79,7 @@ function App() {
       <header className="App-header">
         <h1>Hello</h1>
         <h2>You can uncomment any component to play with</h2>
-      <MemoFun />
+        <DifferentBehaviors />
       </header>
     </div>
   );

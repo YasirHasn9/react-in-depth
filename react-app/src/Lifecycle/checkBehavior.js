@@ -18,6 +18,7 @@ export default  class DifferentBehaviors extends React.Component{
             <div>
                 <button onClick={this.handleClick}>Button with no passing event</button>
                 <button onClick={e => this.handleClick(e)}>Button with event</button>
+                {this.state.checked?"Checked" :"Not Checked"}
             </div>
         )
     }
