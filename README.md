@@ -183,3 +183,11 @@ Now , when it comes to manage the state in react's functional components , some 
 - declarative : because we create the state and tell react whats to be in charge of.
 imagine if you want to ear chicken, all you have to say to your cook, hey i want chicken. we cant do this in imperative manners , we have to go step by step.
 [check this ](https://stackoverflow.com/questions/33655534/difference-between-declarative-and-imperative-in-react-js)
+
+
+2. how to import the Component from react Lib
+- import {Component} from "react"
+
+
+3. The best way to optimize a components that renders the same way given the same props is wrap in 
+in React.memo() [check](./react-app/src/hooks/memo.js)
