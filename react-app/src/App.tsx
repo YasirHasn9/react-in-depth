@@ -1,4 +1,5 @@
-
+// ts project 
+import {Route , Link} from "react-router-dom"
 // import GrandFather from "./passingDrop"
 // import CountChanger from "./CountChanger"
 // import TestEffects from "./sideEffects"
@@ -13,8 +14,8 @@
 import "./App.css"
 // import DisplayWrappedComponentsByHOC from "./HOC/index"
 // import ManageState from "./hooks/index"
-import DifferentBehaviors from "./Lifecycle/checkBehavior"
-import {MemoFun} from "./hooks/memo"
+// import DifferentBehaviors from "./Lifecycle/checkBehavior"
+// import {MemoFun} from "./hooks/memo"
 
 // This is a React components
 // Component must be capitalized 
@@ -51,8 +52,6 @@ function App() {
     <div className="App">
      
         {/* <p>Count: {count}</p>
-
-
         we can make the button in separate component 
         and also we can named CountChanger
         <button onClick={handleAdding}>Add</button>
@@ -77,9 +76,13 @@ function App() {
 
       <ListCities /> */}
       <header className="App-header">
-        <h1>Hello</h1>
-        <h2>You can uncomment any component to play with</h2>
-        <DifferentBehaviors />
+        <nav>
+          <h1>Tinkers</h1>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/shop">shop</Link></li>
+          </ul>
+        </nav>
       </header>
     </div>
   );
