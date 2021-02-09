@@ -2,7 +2,7 @@
 
 A project for practicing theories and anything new I know about React
 
-<bold color="blue">What is react?</bold>
+<strong color="blue">What is react?</strong>
 
 simple enough, React is UI library and NOT a framework. It is built by facebook
 
