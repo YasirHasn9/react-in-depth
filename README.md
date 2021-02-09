@@ -1,8 +1,18 @@
 # react-in-depth
+
+
+<div align="center">
+	<br>
+	<a href="https://raw.githubusercontent.com/sindresorhus/css-in-readme-like-wat/main/readme.md">
+		<img src="header.svg" width="800" height="400" alt="Click to see the source">
+	</a>
+	<br>
+</div>
  A project for practicing theories and anything new I know about React
 
 
-What is react?
+<bold color="blue">What is react?</bold>
+
 simple enough, React is UI library and NOT a framework. It is built by facebook
 
 
@@ -168,7 +178,6 @@ const Button = props => <button>{props.state}</button>
 const ChildComponent = HOC(Button) // easy , right ?
 ```
 I believe, this is how redux and Router are working.
---------------------------------------------------
 
 
 
