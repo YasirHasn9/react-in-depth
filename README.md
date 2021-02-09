@@ -266,3 +266,8 @@ so first install the ts, since we have already created a react app
 to make a react router dom works perfectly with TS we need to install another package for the it 
 which is the type definition of `react-router-dom`
 `npm install --save @types/react-router-dom`
+
+### styled-components
+its lib enables us to write css-in-js, wow ... right ?
+to do that 
+`npm install --save styled-components  @types/styled-component`
