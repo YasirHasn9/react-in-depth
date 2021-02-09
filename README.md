@@ -3,9 +3,7 @@
 
 <div align="center">
 	<br>
-	<a href="https://raw.githubusercontent.com/sindresorhus/css-in-readme-like-wat/main/readme.md">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
-	</a>
+		<img src="https://images.unsplash.com/photo-1612780477448-34d5aa98b2a6?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" width="800" height="400" alt="Click to see the source">
 	<br>
 </div>
  A project for practicing theories and anything new I know about React
