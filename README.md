@@ -36,6 +36,9 @@ a:hover {
   Where I learnt, mess and fix everything*
 </header>
 
+
+
+
 *Welcome to my **kingdom**,<br /> Where I learnt, mess and fix everything_
  A project for practicing theories and anything new I know about React
 
@@ -45,7 +48,6 @@ a:hover {
 A project for practicing theories and anything new I know about React
 
 <strong color="blue">What is react?</strong>
->>>>>>> 7b2840d0b490b0f244e87550e658c6a11f7a8582
 
 simple enough, React is UI library and NOT a framework. It is built by facebook
 

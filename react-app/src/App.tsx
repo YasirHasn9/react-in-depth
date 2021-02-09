@@ -1,5 +1,9 @@
 // ts project 
 import {Route , Link} from "react-router-dom"
+import {ThemeProvider,DefaultTheme}  from "styled-components"
+import {lightTheme} from "./theme"
+import "./App.css"
+
 // import GrandFather from "./passingDrop"
 // import CountChanger from "./CountChanger"
 // import TestEffects from "./sideEffects"
@@ -11,7 +15,7 @@ import {Route , Link} from "react-router-dom"
 // import Lifecycle from "./Lifecycle/index"
 // import ChangeName from "./Lifecycle/example"
 // import ListCities from "./Lifecycle/ListCities"
-import "./App.css"
+
 // import DisplayWrappedComponentsByHOC from "./HOC/index"
 // import ManageState from "./hooks/index"
 // import DifferentBehaviors from "./Lifecycle/checkBehavior"
@@ -21,7 +25,6 @@ import "./App.css"
 // Component must be capitalized 
 // it should return a react element 
 function App() {
-/*
   // // if console log what something gives us it will return an array of state and setter
   // const something = useState(false) 
   // so we can get the state and the setter
@@ -29,26 +32,29 @@ function App() {
   // const fun = something[1]
   // we can achieve the same result by writing only one line
 
-  const [state , setState] = useState(true)
-  const [count , setCount] = useState(0)
+  // const [state , setState] = useState(true)
+  // const [count , setCount] = useState(0)
 
   // this is for the purpose of props-type
-  const [name , setName] = useState("")
-  const handleChange = e => setName(e.target.value)
+  // const [name , setName] = useState("")
+  // const handleChange = e => setName(e.target.value)
 
   // this is a powerful feature react has 
   // whenever the state changes react knows what to do and renders on the dom
-  const handleAdding = () => {
-    setCount(() => count + 1)
-  }
-  const multi = () => {
-    setCount(() => count * 5)
-  }
-  const reset = () => {
-    setCount(0)
-  }
-*/
+  
+  // const handleAdding = () => {
+  //   setCount(() => count + 1)
+  // }
+  // const multi = () => {
+  //   setCount(() => count * 5)
+  // }
+
+
+  // const reset = () => {
+  //   setCount(0)
+  // }
   return (
+    <ThemeProvider theme={lightTheme}>
     <div className="App">
      
         {/* <p>Count: {count}</p>
@@ -85,6 +91,7 @@ function App() {
         </nav>
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 
