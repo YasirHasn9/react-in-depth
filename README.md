@@ -1,11 +1,41 @@
 # react-in-depth
 
+<style>
+a {
+  color:black;
+  color:white;
+}
+a:hover {
+  text-decoration:none;
+  color:white;
+}
+.navbar-list {
+  list-style:none;
+  display:flex;
+}
+.navbar-list li {
+  margin-left: 3rem;
+  padding:1rem 2rem;
+  background:green;
+  border-radius:1rem;
+}
+</style>
 
-<div align="center" width="100%">
-	<br>
-		<img src="https://images.unsplash.com/photo-1612780477448-34d5aa98b2a6?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" width="80%" height="600" alt="Click to see the source">
-	<br>
-</div>
+<header class="header">
+<nav>
+<ul class="navbar-list">
+<li><a href="">LinkedIn</a></li>
+<li><a href="">Twitter</a></li>
+</ul>
+</nav>
+  Hi, Im Yasir! <br />
+  I'm a Software Lover/Coder/Developer/Engineer 
+
+  *Welcome to my **kingdom**, <br />
+  Where I learnt, mess and fix everything*
+</header>
+
+*Welcome to my **kingdom**,<br /> Where I learnt, mess and fix everything_
  A project for practicing theories and anything new I know about React
 
 
