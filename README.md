@@ -250,3 +250,19 @@ useEffect(() => {
 
 
 25. React component won't render if one of the siblings gets re-render.
+
+
+### React Router Dom 
+It's away for application of client side to navigate from place to place into the app. everything is done by JS in the browser and we dont need to go to ask the server and reload the page again. So fast 
+`npm install --save react-router-dom`
+
+--------
+in this project im gonna work with ts 
+so first install the ts, since we have already created a react app
+`npm install typescript @types/node @types/react @types/react-dom @types/jest --dev`
+
+
+
+to make a react router dom works perfectly with TS we need to install another package for the it 
+which is the type definition of `react-router-dom`
+`npm install --save @types/react-router-dom`
