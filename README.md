@@ -1,5 +1,6 @@
 # react-in-depth
 
+
 <style>
 a {
   color:black;
@@ -40,6 +41,11 @@ a:hover {
 
 
 <bold color="blue">What is react?</bold>
+=======
+A project for practicing theories and anything new I know about React
+
+<strong color="blue">What is react?</strong>
+>>>>>>> 7b2840d0b490b0f244e87550e658c6a11f7a8582
 
 simple enough, React is UI library and NOT a framework. It is built by facebook
 
