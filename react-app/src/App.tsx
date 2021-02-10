@@ -2,6 +2,7 @@
 import {Route , Link} from "react-router-dom"
 import {ThemeProvider,DefaultTheme}  from "styled-components"
 import {lightTheme} from "./theme"
+import {NavBar} from "./style"
 import "./App.css"
 
 // import GrandFather from "./passingDrop"
@@ -82,13 +83,13 @@ function App() {
 
       <ListCities /> */}
       <header className="App-header">
-        <nav>
-          <h1>Tinkers</h1>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/shop">shop</Link></li>
-          </ul>
-        </nav>
+        <NavBar>
+          <h1><Link to="/">Tinkers</Link></h1>
+          <div>
+            <Link color="red" to="/">home</Link>
+            <Link to="/shop">shop</Link>
+          </div>
+        </NavBar>
       </header>
     </div>
     </ThemeProvider>
