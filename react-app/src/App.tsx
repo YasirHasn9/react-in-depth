@@ -1,15 +1,20 @@
 // ts project 
-import {Route , Link} from "react-router-dom"
+import {Link} from "react-router-dom"
+
+// style 
 import {ThemeProvider}  from "styled-components"
-import {lightTheme} from "./theme"
-import {NavBar} from "./style"
+import GlobalStyle from "./TSproject/global/index"
+import {lightTheme , darkTheme} from "./TSproject/theme";
+import {NavBar} from "./TSproject/style"
 import "./App.css"
 
 
 const App: React.FC  = ():JSX.Element => {
  
   return (
-    <ThemeProvider theme={lightTheme}>
+
+    <ThemeProvider theme={lightTheme || darkTheme}>
+          <GlobalStyle />
     <div className="App">
       <header className="App-header">
         <NavBar>
