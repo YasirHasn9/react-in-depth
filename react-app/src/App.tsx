@@ -25,7 +25,13 @@ import "./App.css"
 // This is a React components
 // Component must be capitalized 
 // it should return a react element 
-function App() {
+
+
+import {TextInsideTheLink} from "./style"
+export type StyleProps = {
+    color:string;
+  }
+function App():JSX.Element{
   // // if console log what something gives us it will return an array of state and setter
   // const something = useState(false) 
   // so we can get the state and the setter
@@ -86,7 +92,11 @@ function App() {
         <NavBar>
           <h1><Link to="/">Tinkers</Link></h1>
           <div>
-            <Link color="red" to="/">home</Link>
+            <Link to="/">
+              <TextInsideTheLink color="red">
+
+              </TextInsideTheLink>
+            </Link>
             <Link to="/shop">shop</Link>
           </div>
         </NavBar>
