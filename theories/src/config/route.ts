@@ -17,6 +17,12 @@ export const routes : IRoute [] = [
         name:'about page',
         exact:true,
         component:About
+    },
+    {
+        path:"/about/:id",
+        name:'about page',
+        exact:true,
+        component:About
     }
 ]
 
