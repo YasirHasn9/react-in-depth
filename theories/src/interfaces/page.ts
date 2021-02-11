@@ -1,3 +1,3 @@
-export default interface IPage {
+export interface IPage {
     name:string
 }
