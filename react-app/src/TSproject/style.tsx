@@ -1,16 +1,19 @@
 import styled from "styled-components"
 
 export const NavBar = styled.nav`
+background-color:#d1eaf3;
 width:100%;
+height:8rem;
 display:flex;
-justify-content:space-around;
+justify-content:space-between;
+align-items:center;
 h1 {
     padding:1rem 2rem;
-    border-bottom:1px solid skyblue;
     letter-spacing:5px;
     font-family:cursive;
+    font-size:3rem;
     a {
-        color:#fff;
+        color:#333;
     }
 }
  div {   
@@ -20,21 +23,21 @@ h1 {
      width:40%;
      a {
          padding:1.5rem 2rem;
-         border-bottom:2px solid skyblue;
          text-decoration:none;
-         color:#fff;
-         font-size:2.2rem;
+         color:#333;
+         font-size:1.6rem;
          text-transform:capitalize;
          transition:all .4s;
          letter-spacing:3px;
          transform:translateY(-1px);
+         border:1px solid #000;
+         border-bottom:1rem solid #000;
+         border-radius:1rem;
          &:hover {
-             background:#000;
-             border-radius:1rem;
              transform:translateY(-3px);
          }
          &:active {
-            transform:translateY(-2px);
+            transform:translateY(2px);
          }
         }
  }
