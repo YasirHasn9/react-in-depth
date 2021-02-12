@@ -1,11 +1,39 @@
 import React from "react"
+import {Link} from "react-router-dom"
+import {Wrapper, CategoryDiv} from "./shop.style"
 
+const Shop = ({items}) => {
 
-const Shop = (props) => {
-    console.log(props)
     return (
-        <h1>SHop</h1>
+        <Wrapper>
+            {
+                items.map(item => (
+                    <Link to={`/shop/${item.id}`}>
+                        <CategoryDiv>
+                            <img src={item.image} alt={item.title} />
+                        </CategoryDiv>
+                    </Link>
+                ))
+            } 
+        </Wrapper>
     )
 }
 
 export default Shop
+
+
+
+
+/*
+    const getCategoriesNames = items => {
+        let uniqueValues = {}
+        for(let i = 0 ; i < items.length ; i++){
+            if(!uniqueValues[items[i].category]) {
+                uniqueValues[items[i].category] = 1
+            } else {
+                uniqueValues[items[i].category] += 1
+            }
+        }
+        return Object.keys(uniqueValues)
+    }
+*/

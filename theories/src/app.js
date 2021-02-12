@@ -4,9 +4,10 @@ import {Switch , Link , Route} from "react-router-dom"
 
 // pages 
 import Shop from "./pages/shop/shop"
+import Item from "./pages/shop/item/item"
 
 // styled 
-import {Wrapper} from "./style.app"
+import {Wrapper , NavBar} from "./style.app"
 
 const App = () => {
     const [items , setItems ] = useState([])
@@ -18,14 +19,19 @@ const App = () => {
     } , [])
     return (
       <Wrapper>
-          <nav>
+          <NavBar>
               <Link to="/">Home</Link>
               <Link to="/shop">Shop</Link>
-          </nav>
+          </NavBar>
             <Switch>
+                
                 <Route exact path="/" />
-                <Route path="/shop" render={(props) => <Shop {...props} items={items} />} />
+                <Route exact path="/shop" render={(props) => <Shop {...props} items={items} />} />
+                <Route path="/shop/:id">
+                    <Item items={items}/>
+                </Route>     
             </Switch>
+
       </Wrapper>
     )
 }
