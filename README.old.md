@@ -282,3 +282,4 @@ There is a lot of advantages from using SC with React, these are my fav ones
 1. Automatic vender prefixes: styled component will do that for us
 2. Unique class names which each styled will belongs for its own component. That allows us to use the same class name in different components
 3. Eliminate of dead code: SC will remove the unused style 
+<!--  -->
