@@ -1,14 +1,12 @@
-import {useParams } from "react-router-dom"
+import {Link } from "react-router-dom"
 
 
 const Products = props => {
-    const params = useParams()
-    console.log(params)
     return (
         <div>
-            {props.products.map(products => (
+            {props.products.map(product => (
                 <div>
-                    <p>{products.title}</p>
+                   <Link to={`/products/${product.id}`}> <p>{product.title}</p></Link>
                 </div>
             ))
             }
