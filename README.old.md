@@ -282,4 +282,13 @@ There is a lot of advantages from using SC with React, these are my fav ones
 1. Automatic vender prefixes: styled component will do that for us
 2. Unique class names which each styled will belongs for its own component. That allows us to use the same class name in different components
 3. Eliminate of dead code: SC will remove the unused style 
-<!--  -->
+<!-- 
+@typescript with react-router 
+https://programming.vip/docs/using-typescript-to-write-react-router-5.html
+
+best practice of CSS
+https://cssguidelin.es
+
+AWS Certified Cloud Practitioner Training 2020 - Full Course
+https://www.youtube.com/watch?v=3hLmDS179YE
+ -->

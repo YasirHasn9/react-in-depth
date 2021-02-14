@@ -16,6 +16,15 @@ let style = {
   borderRadius:"1rem"
 }
 
+
+/*
+The plan of tomorrow 
+created a function that extract the names of the categories 
+      each name is gonna be a button
+            each button will display a component holds all the products that belong to its category
+                 provide a btn in each products that takes the client to whole info of the product
+*/
+
 function App() {
 
   const [products, setProducts] = useState([])
