@@ -39,7 +39,12 @@ function App() {
       <Home />
       <Switch>
         <Route exact path="/products" render={props => <Products {...props} products={products} />} />
-        <Route path="/products/:id" render={props => <Product {...props} products={products}  /> } />
+
+
+
+
+        {/* this component for each products */}
+        {/* <Route path="/products/:id" render={props => <Product {...props} products={products}  /> } /> */}
       </Switch>
     </div>
   );
