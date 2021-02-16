@@ -1,9 +1,7 @@
-import {Link, useRouteMatch } from "react-router-dom"
+import {Link , Route } from "react-router-dom"
 
 
 const Products = props => {
-    // let match = useRouteMatch("/products")
-    // // console.log(match)
 
     const getCategoryNames = arr  => {
         let uniqueValue = {}
@@ -33,7 +31,7 @@ const Products = props => {
             }}>
             {
                 getCategoryNames(props.products).map(category => {
-                    return <Link to={`/products/${category}`} style={{fontSize:"1.6rem"}}>{category}</Link>
+                    return <Link to={`/categories/${category}`} style={{fontSize:"1.6rem"}}>{category}</Link>
                 })
             }
             </div>

@@ -21,7 +21,7 @@ const Home = () => {
                 }
             }>
                 <Link style={style} to="/">Home</Link>
-                <Link style={style} to="/products">products</Link>
+                <Link style={style} to="/categories">Categories</Link>
             </nav>
 
             <h1>Home</h1>

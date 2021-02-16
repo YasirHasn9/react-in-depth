@@ -4,8 +4,9 @@ import axios from "axios"
 
 // Pages 
 import Home from "./pages/home/home"
-import Products from "./pages/products/products"
-import Product from "./pages/products/product/product"
+import Categories from "./category/Categories"
+// import Products from "./pages/products/products"
+// import Product from "./pages/products/product/product"
 
 let style = {
   textDecoration:"none",
@@ -38,13 +39,7 @@ function App() {
     <div className="App">
       <Home />
       <Switch>
-        <Route exact path="/products" render={props => <Products {...props} products={products} />} />
-
-
-
-
-        {/* this component for each products */}
-        {/* <Route path="/products/:id" render={props => <Product {...props} products={products}  /> } /> */}
+        <Route exact path="/categories" render={props => <Categories {...props} products={products} />} />
       </Switch>
     </div>
   );
