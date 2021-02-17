@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import {Route, Switch, Link} from "react-router-dom"
 import axios from "axios"
-
+import Category from "./category/Category"
 // Pages 
 import Home from "./pages/home/home"
 import Categories from "./category/Categories"
@@ -40,6 +40,7 @@ function App() {
       <Home />
       <Switch>
         <Route exact path="/categories" render={props => <Categories {...props} products={products} />} />
+        <Route exact path="/categories/:id"   render={props => <Category   {...props} products={products}/> } />
       </Switch>
     </div>
   );

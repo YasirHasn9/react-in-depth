@@ -1,13 +1,18 @@
-import { useHistory, useRouteMatch } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 
 
 
 const Category = props => {
-    console.log(document.location.pathname)
-    console.log("this is history from " , props.history)
+    const params = useParams()
+    console.log("params from the props " , params)
+
+    console.log("props from the category",props)
     return (
-        <h1>Category</h1>
+        <>
+                <h1>Category</h1>
+                <p>{params.id}</p>
+        </>
     )
 }
 

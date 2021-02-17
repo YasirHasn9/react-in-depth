@@ -1,12 +1,16 @@
-import {Link , Route , Switch, useHistory, useRouteMatch} from "react-router-dom"
+import {Link , Route , Switch, useHistory, useParams, useRouteMatch} from "react-router-dom"
 import Category from "./Category"
 
 
 const Categories = props => {
+    console.log("Categories" , props.products)
+    const params = useParams()
+    console.log("params from the user" , params)
 
-
+    let products = props.products
     const {url , path} = useRouteMatch()
 
+    // receive data and  extract the category names
     const getCategoryNames = arr  => {
         let uniqueValue = {}
         for (let i = 0 ; i < arr.length ; i++){
@@ -33,11 +37,15 @@ const Categories = props => {
                 backgroundColor:"#eee",
             }}>
             {
-                getCategoryNames(props.products).map(category => {
+
+                
+                getCategoryNames(products).map(category => {
                     return (
                         <>
-                        <div style={{backgroundColor:"red"}}>
-                        <Link  onClick={() => console.log(`${path}/${category.trim()}`)} to={`${path}/${category.trim()}`} style={{fontSize:"1.6rem"}}>{category}</Link>
+                        <div >
+                        <Link key={category.id} to={`${path}/${category}`}>
+                            {category}
+                        </Link>
                         </div>
                         </>
                     )
@@ -45,15 +53,7 @@ const Categories = props => {
             }
 
             </div>
-            <div>
                         
-                        <Route 
-                              exact 
-                              path={`${path}/${document.location.pathname}`} 
-                              render={props =>  <Category {...props} products={props.products}/>} 
-                         />
-                      </div>
-        
             </>
     )
 }
