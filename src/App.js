@@ -1,21 +1,7 @@
 import {useEffect, useState} from "react"
 import {Route, Switch, Link} from "react-router-dom"
 import axios from "axios"
-import Category from "./category/Category"
-// Pages 
-import Home from "./pages/home/home"
-import Categories from "./category/Categories"
-// import Products from "./pages/products/products"
-// import Product from "./pages/products/product/product"
 
-let style = {
-  textDecoration:"none",
-  color:"#333",
-  fontSize:"1.6rem",
-  background:"#eee",
-  padding:"1rem 2rem",
-  borderRadius:"1rem"
-}
 
 
 /*
@@ -37,11 +23,21 @@ function App() {
   } , [])
   return (
     <div className="App">
-      <Home />
-      <Switch>
-        <Route exact path="/categories" render={props => <Categories {...props} products={products} />} />
-        <Route exact path="/categories/:id"   render={props => <Category   {...props} products={products}/> } />
-      </Switch>
+      <ol>
+        <li>
+          create a home page that has:
+          <ul>
+            <li>navigation links</li>
+            <li>each link directs the user to a different category </li>
+          </ul>
+          </li>
+          <li> create  dynamic components:
+            <ul>
+              <li> each component has different items</li>
+              <li>each items navigates the user to whole description of the item</li>
+            </ul>
+          </li>
+      </ol>
     </div>
   );
 }
