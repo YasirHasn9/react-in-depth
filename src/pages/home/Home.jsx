@@ -10,7 +10,7 @@ export const Home = (props) => {
             wrapper
             <div>navigation</div>
             <ul>
-                <li>home</li>
+                <li><Link to="/home">Home</Link></li>
                 <li>about</li>
                 <li><Link to={`${path}/shop`}>Shop</Link></li>
             </ul>
