@@ -1,18 +1,24 @@
+import {Link} from "react-router-dom"
+
+import {Wrapper,Product} from "./style.shop"
 export function Shop({products}){
     return (
         <>
-        <div>
-            wrapper
+        <Wrapper>
             {
                 products.map(product => (
-                    <div key={product.id}>
-                        <h3>{product.title}</h3>
-                        <img src={product.image} alt={product.title} />
-                        <p>{product.price}</p>
-                    </div>
+                    <Product key={product.id}>
+                        <p>{product.title}</p>
+                        <div className="img">
+                        
+                           <img src={product.image} alt={product.title} />
+                        </div>
+                        <p>Price: {product.price}</p>
+                        <button><Link>See More</Link></button>
+                    </Product>
                 ))
             }
-        </div>
+        </Wrapper>
         </>
     )
 }
