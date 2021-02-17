@@ -3,14 +3,12 @@ import {Route, Switch, Link} from "react-router-dom"
 import axios from "axios"
 
 
+// pages/components
+import {Strategy} from "./strategy"
+import {Home} from "./pages/home/Home"
+import {Shop} from "./pages/shop/Shop"
 
-/*
-The plan of tomorrow 
-created a function that extract the names of the categories 
-      each name is gonna be a button
-            each button will display a component holds all the products that belong to its category
-                 provide a btn in each products that takes the client to whole info of the product
-*/
+
 
 function App() {
 
@@ -22,22 +20,16 @@ function App() {
     .catch(err => console.log(err)) 
   } , [])
   return (
-    <div className="App">
-      <ol>
-        <li>
-          create a home page that has:
-          <ul>
-            <li>navigation links</li>
-            <li>each link directs the user to a different category </li>
-          </ul>
-          </li>
-          <li> create  dynamic components:
-            <ul>
-              <li> each component has different items</li>
-              <li>each items navigates the user to whole description of the item</li>
-            </ul>
-          </li>
-      </ol>
+    <div>
+      <div>
+        <Link to="/strategy">Strategy</Link>
+        <Link to="/home">Home</Link>
+      </div>
+      <Switch>
+        <Route path="/strategy" component={Strategy} />
+        <Route path="/home" render={props => <Home {...props} products={products} />}  />
+        {/* <Route path="/shop" render={props => <Shop {...props} products={products} />}  /> */}
+      </Switch>
     </div>
   );
 }
