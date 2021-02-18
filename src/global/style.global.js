@@ -28,4 +28,9 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
 `
