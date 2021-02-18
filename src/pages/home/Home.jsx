@@ -1,6 +1,7 @@
 
 import {Route , Link, useRouteMatch} from "react-router-dom"
 // components
+import {Navigation} from "./nav/Navigation"
 import {Shop} from "../shop/Shop"
 import {Product} from "../product/Product"
 
@@ -14,12 +15,7 @@ export const Home = (props) => {
     return(
         <Wrapper>
             <div className="overlay">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li>about</li>
-                <li><Link to={`/shop`}>Shop</Link></li>
-            </ul>
-
+           <Navigation />
 
             <div>
                 <Route
