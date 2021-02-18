@@ -2,6 +2,7 @@
 import {Route , Link, useRouteMatch} from "react-router-dom"
 // components
 import {Shop} from "../shop/Shop"
+import {Product} from "../product/Product"
 
 export const Home = (props) => {
     const {path} = useRouteMatch()
@@ -17,7 +18,13 @@ export const Home = (props) => {
 
 
             <div>
-                <Route path={`${path}/shop`} render={propsRoute => <Shop {...propsRoute} products={props.products} />} />
+                <Route
+                exact
+                 path={`${path}/shop`} 
+                 render={propsRoute => <Shop {...propsRoute} products={props.products} />} />
+                <Route 
+                path={`${path}/shop/:id`} 
+                render={propsRoute => <Product {...propsRoute} products={props.products} />}  />
             </div>
         </div>
     )

@@ -1,9 +1,12 @@
-import {Link} from "react-router-dom"
+import {Link, useRouteMatch} from "react-router-dom"
 
 import {Wrapper,Product} from "./style.shop"
-export function Shop({products}){
+export function Shop(props){
+    const {products} = props
+
+    const routes = useRouteMatch()
+    const {url , path} = routes
     return (
-        <>
         <Wrapper>
             {
                 products.map(product => (
@@ -14,11 +17,15 @@ export function Shop({products}){
                            <img src={product.image} alt={product.title} />
                         </div>
                         <p>Price: {product.price}</p>
-                        <button><Link>See More</Link></button>
+                        <button>
+                            <Link to={`${path}/${product.id}`}>
+                                See More
+                            </Link>
+                        </button>
                     </Product>
                 ))
             }
         </Wrapper>
-        </>
+    
     )
 }

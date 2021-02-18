@@ -31,7 +31,6 @@ export const Product = styled.div`
     overflow:hidden;
 
     .img {
-        background-color:red;
         height:60%;
         img {
         width:100%;
