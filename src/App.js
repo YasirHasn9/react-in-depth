@@ -26,10 +26,10 @@ function App() {
     <Theming>
       <GlobalStyle />
       <div>
-        <Link to="/home">Home</Link>
+        {/* <Link to="/home">Home</Link> */}
       </div>
       <Switch>
-        <Route path="/home" render={props => <Home {...props} products={products} />}  />
+        <Route path="/" render={props => <Home {...props} products={products} />}  />
         {/* <Route path="/shop" render={props => <Shop {...props} products={products} />}  /> */}
       </Switch>
     </Theming>

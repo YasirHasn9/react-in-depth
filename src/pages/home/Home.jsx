@@ -4,28 +4,33 @@ import {Route , Link, useRouteMatch} from "react-router-dom"
 import {Shop} from "../shop/Shop"
 import {Product} from "../product/Product"
 
+
+// style
+import {Wrapper} from "./style.home"
+
 export const Home = (props) => {
     const {path} = useRouteMatch()
+    console.log("This is from the home",path)
     return(
-        <div>
-            wrapper
-            <div>navigation</div>
+        <Wrapper>
+            <div className="overlay">
             <ul>
-                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li>about</li>
-                <li><Link to={`${path}/shop`}>Shop</Link></li>
+                <li><Link to={`/shop`}>Shop</Link></li>
             </ul>
 
 
             <div>
                 <Route
                 exact
-                 path={`${path}/shop`} 
+                 path={`/shop`} 
                  render={propsRoute => <Shop {...propsRoute} products={props.products} />} />
                 <Route 
-                path={`${path}/shop/:id`} 
+                path={`/shop/:id`} 
                 render={propsRoute => <Product {...propsRoute} products={props.products} />}  />
             </div>
-        </div>
+            </div>
+        </Wrapper>
     )
 }
