@@ -11,7 +11,7 @@ import {Shop} from "./pages/shop/Shop"
 
 // style
 import {Theming} from "./global/style.theming"
-import {GlobalStyle} from "./style.global"
+import {GlobalStyle} from "./global/style.global"
 
 
 function App() {
