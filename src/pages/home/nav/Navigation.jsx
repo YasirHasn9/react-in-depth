@@ -10,8 +10,8 @@ export const Navigation = props => {
 
 
             <ListNavigation >
-                <li><Link>Home</Link></li>
-                <li><Link>Shop</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
                 <li><Link>About</Link></li>
                 <li><Link>Contact</Link></li>
             </ListNavigation >
