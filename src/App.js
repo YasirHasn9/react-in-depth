@@ -6,6 +6,7 @@ import axios from "axios"
 // pages/components
 import {Home} from "./pages/home/Home"
 import {Shop} from "./pages/shop/Shop"
+import {Product} from "./pages/product/Product"
 
 
 
@@ -21,17 +22,13 @@ function App() {
     axios.get("https://fakestoreapi.com/products")
     .then(res =>  setProducts(res.data))
     .catch(err => console.log(err)) 
-  } , [])
+  } , [ ])
   return (
     <Theming>
       <GlobalStyle />
-      <div>
-        {/* <Link to="/home">Home</Link> */}
-      </div>
-      <Switch>
-        <Route path="/" render={props => <Home {...props} products={products} />}  />
-        {/* <Route path="/shop" render={props => <Shop {...props} products={products} />}  /> */}
-      </Switch>
+        <Route exact path="/" render={props => <Home {...props} products={products} />}  />
+        <Route exact path="/shop" render={props => <Shop {...props} products={products}  />} />
+        <Route path="/shop/:id" render={props => <Product {...props} products={products}  />} />
     </Theming>
   );
 }
