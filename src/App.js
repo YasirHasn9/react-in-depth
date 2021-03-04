@@ -14,8 +14,11 @@ import {Product} from "./pages/product/Product"
 import {Theming} from "./global/style.theming"
 import {GlobalStyle} from "./global/style.global"
 
-
+// bootstrap
 import {PlayingWithBootstrap} from "./testBootstrap/index"
+
+// form in react 
+import {ReactFrom} from "./form/index"
 
 
 function App() {
@@ -43,6 +46,7 @@ function App() {
         <p></p>
         <p></p>
         <PlayingWithBootstrap />
+        <ReactFrom />
     </Theming>
   );
 }
