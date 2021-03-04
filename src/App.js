@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react"
-import {Route, Switch, Link} from "react-router-dom"
+import {Route} from "react-router-dom"
 import axios from "axios"
 
 
@@ -15,6 +15,9 @@ import {Theming} from "./global/style.theming"
 import {GlobalStyle} from "./global/style.global"
 
 
+import {PlayingWithBootstrap} from "./testBootstrap/index"
+
+
 function App() {
   const [products, setProducts] = useState([])
 
@@ -26,9 +29,20 @@ function App() {
   return (
     <Theming>
       <GlobalStyle />
-        <Route exact path="/" render={props => <Home {...props} products={products} />}  />
+        {/* <Route exact path="/" render={props => <Home {...props} products={products} />}  />
         <Route exact path="/shop" render={props => <Shop {...props} products={products}  />} />
-        <Route path="/shop/:id" render={props => <Product {...props} products={products}  />} />
+        <Route path="/shop/:id" render={props => <Product {...props} products={products}  />} /> */}
+
+        {/*  */}
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <PlayingWithBootstrap />
     </Theming>
   );
 }
