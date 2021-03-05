@@ -32,20 +32,6 @@ function App() {
   return (
     <Theming>
       <GlobalStyle />
-        {/* <Route exact path="/" render={props => <Home {...props} products={products} />}  />
-        <Route exact path="/shop" render={props => <Shop {...props} products={products}  />} />
-        <Route path="/shop/:id" render={props => <Product {...props} products={products}  />} /> */}
-
-        {/*  */}
-
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <PlayingWithBootstrap />
         <ReactFrom />
     </Theming>
   );
