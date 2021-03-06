@@ -18,21 +18,14 @@ import {GlobalStyle} from "./global/style.global"
 import {PlayingWithBootstrap} from "./testBootstrap/index"
 
 // form in react 
-import {ReactFrom} from "./form/index"
+import {Notes} from "./form/index"
 
 
 function App() {
-  const [products, setProducts] = useState([])
-
-  useEffect(( ) => {
-    axios.get("https://fakestoreapi.com/products")
-    .then(res =>  setProducts(res.data))
-    .catch(err => console.log(err)) 
-  } , [ ])
   return (
     <Theming>
       <GlobalStyle />
-        <ReactFrom />
+        <Notes />
     </Theming>
   );
 }

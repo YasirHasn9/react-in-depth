@@ -1,13 +1,31 @@
-// form in react and how to handle it 
-// form contains inputs and labels, so we can get an information form the customer
 import { useState } from "react"
-import {Container , Row} from "react-bootstrap"
 
 
-export const ReactFrom = () => {
+
+
+import {FormNotes} from "./notes"
+import {Display} from "./display"
+
+export const Notes = () => {
+    const [notes, setNotes] = useState([{title:"Hello from the main" , body:"This is body"}])
+
+    const addNewNote = (note) => {
+         const newNote = {
+             title:note.title,
+             body:note.body,
+             id:Date.now()
+         }
+        setNotes([newNote , ...notes])
+    }
     return (
-        <Container style={{padding:"200px", background:"#eee"}}>
-      
-        </Container>
+        <div style={{background:"#eee" ,
+                     width:"100%",
+                     height:"100vh",
+                      display:"flex",
+                      justifyContent:"center", }}
+                      >
+            <FormNotes addNewNote={addNewNote} />
+            <Display notes={notes} />
+        </div>
     )
 }
