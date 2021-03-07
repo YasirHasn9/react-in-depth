@@ -17,6 +17,28 @@ export const Notes = () => {
          }
         setNotes([newNote , ...notes])
     }
+
+    const deleteNote = id => {
+        
+        // 1.copy the original notes 
+        let copyNotes = [...notes]
+        // 2. find the notes through the index in the copy one
+        const idx = copyNotes.findIndex(note => note.id === id)
+        console.log(idx)
+        // 3. delete the found note from the notes 
+        copyNotes.splice(idx , 1)
+        // 4. set the setter to new coptNotes
+        setNotes(copyNotes)
+
+
+     
+   
+
+
+
+
+    
+    }
     return (
         <div style={{background:"#eee" ,
                      width:"100%",
@@ -25,7 +47,7 @@ export const Notes = () => {
                       justifyContent:"center", }}
                       >
             <FormNotes addNewNote={addNewNote} />
-            <Display notes={notes} />
+            <Display notes={notes} deleteNote={deleteNote}/>
         </div>
     )
 }
