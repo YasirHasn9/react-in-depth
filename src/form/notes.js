@@ -12,6 +12,10 @@ export const FormNotes = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault()
+        if(!note.title || !note.body){
+            alert("You have to submit title and note")
+            return 
+        }
         props.addNewNote(note)
         setNote({title:"" , body:""})
     }
@@ -19,7 +23,15 @@ export const FormNotes = (props) => {
     return (
 
             <form onSubmit={handleSubmit}>
-                <input type="text" id="title"  value={note.title} placeholder="Title" name="title"  onChange={handleChange} />
+                <input 
+                type="text" 
+                id="title"  
+                value={note.title} 
+                placeholder="Title" 
+                name="title"  
+                onChange={handleChange} 
+                required
+                />
                 <br />
                 <textarea id="textArea" type="text" placeholder="Text Area" name="body"  onChange={handleChange} value={note.body} />
                 <br />
