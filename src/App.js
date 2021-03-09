@@ -17,15 +17,15 @@ import {GlobalStyle} from "./global/style.global"
 // bootstrap
 import {PlayingWithBootstrap} from "./testBootstrap/index"
 
-// form in react 
-import {Notes} from "./form/index"
+// Crud
+import {CRUD} from "./crud/index"
 
 
 function App() {
   return (
     <Theming>
       <GlobalStyle />
-        <Notes />
+      <CRUD />
     </Theming>
   );
 }
