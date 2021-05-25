@@ -19,16 +19,15 @@ import { TodoList } from "./crud/TodoList";
 
 // deep look at forms in react
 import { FormInReact } from "./deepLookAtForms/index";
-
+// Other form inputs
+import { InputTypes } from "./deepLookAtForms/inputTypes";
+import { Users } from "./AddUser/users";
 function App() {
   return (
-    // <Theming>
-    <>
+    <Theming>
       <GlobalStyle />
-      {/* <TodoList /> */}
-      <FormInReact />
-      {/* // </Theming> */}
-    </>
+      <Users />
+    </Theming>
   );
 }
 

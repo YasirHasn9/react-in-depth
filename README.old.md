@@ -296,3 +296,7 @@ This has to do with the form being stateful and also it will be able to keep tra
 ---
 
 we need to capture the value of the input. In regular dom, each time we change the value of the input, the change would trigger an even change that dom api exposed to us, but lets remember that react operates out virtual dom. when react decide whats to render the dom does not exited yet. Thats why we have synthetic event which effectively simulate the native dom events. They are designed to work as much like their native counterparts as possible and for the vast majority they do but also we should be aware of their existence.
+
+**_ note _**
+it is useful to use 2-way binding with react in forms because we can use
+gather information and send to the web server and also reformat the inputs again to its original state.
